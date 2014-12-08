@@ -1,0 +1,61 @@
+Module                  Size  Used by
+rfcomm                 69160  0 
+bnep                   19624  2 
+bluetooth             391136  10 bnep,rfcomm
+snd_hda_codec_hdmi     46368  1 
+snd_hda_codec_realtek    65580  1 
+usb_storage            62209  0 
+snd_hda_intel          56451  3 
+snd_hda_codec         192906  3 snd_hda_codec_realtek,snd_hda_codec_hdmi,snd_hda_intel
+snd_hwdep              13602  1 snd_hda_codec
+snd_pcm               102099  3 snd_hda_codec_hdmi,snd_hda_codec,snd_hda_intel
+snd_page_alloc         18710  2 snd_pcm,snd_hda_intel
+intel_rapl             18773  0 
+x86_pkg_temp_thermal    14205  0 
+intel_powerclamp       14705  0 
+coretemp               13435  0 
+kvm_intel             143148  0 
+kvm                   451729  1 kvm_intel
+snd_seq_midi           13324  0 
+snd_seq_midi_event     14899  1 snd_seq_midi
+crct10dif_pclmul       14289  0 
+snd_rawmidi            30144  1 snd_seq_midi
+crc32_pclmul           13113  0 
+ghash_clmulni_intel    13216  0 
+dcdbas                 14928  0 
+parport_pc             32701  1 
+snd_seq                61560  2 snd_seq_midi_event,snd_seq_midi
+ppdev                  17671  0 
+snd_seq_device         14497  3 snd_seq,snd_rawmidi,snd_seq_midi
+snd_timer              29482  2 snd_pcm,snd_seq
+aesni_intel            55624  0 
+aes_x86_64             17131  1 aesni_intel
+lrw                    13286  1 aesni_intel
+gf128mul               14951  1 lrw
+glue_helper            13990  1 aesni_intel
+ablk_helper            13597  1 aesni_intel
+cryptd                 20359  3 ghash_clmulni_intel,aesni_intel,ablk_helper
+serio_raw              13462  0 
+snd                    69322  17 snd_hda_codec_realtek,snd_hwdep,snd_timer,snd_hda_codec_hdmi,snd_pcm,snd_seq,snd_rawmidi,snd_hda_codec,snd_hda_intel,snd_seq_device,snd_seq_midi
+a3818                  17414  0 
+lpc_ich                21080  0 
+i915                  783961  3 
+lp                     17759  0 
+parport                42348  3 lp,ppdev,parport_pc
+drm_kms_helper         55071  1 i915
+video                  19476  1 i915
+mac_hid                13205  0 
+drm                   303102  4 i915,drm_kms_helper
+i2c_algo_bit           13413  1 i915
+soundcore              12680  1 snd
+mei_me                 18627  0 
+mei                    82276  1 mei_me
+hid_generic            12548  0 
+usbhid                 52659  0 
+hid                   106148  2 hid_generic,usbhid
+psmouse               106714  0 
+ahci                   25819  2 
+e1000e                254433  0 
+libahci                32716  1 ahci
+ptp                    18933  1 e1000e
+pps_core               19382  1 ptp
